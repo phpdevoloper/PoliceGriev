@@ -1,0 +1,110 @@
+/* Mobile Start */
+@media(max-width:767px){
+	.form_mandatory_left {
+		width: 100%;
+		text-align: center;
+	}
+	.form_mandatory_right {
+		width: 100%;
+		text-align: center;
+    }
+	.form_user{
+		line-height: 16px;
+	}
+	.form_he_rig{
+		width: 62%;
+	}
+	.form_down{
+		width: 17%;
+	}
+	.with_se {
+        width: 100%;
+    }
+	.lab_with {
+		width: 95%;
+	    text-align: left; 
+	}
+	.se_box_with{
+		width: 96%;
+	}
+	.se_box_with1{
+		width: 96%;
+	}
+	.se_box_with2{
+		width: 96%;
+		margin-top: 9px;
+	}
+	.with_textarea{
+		width: 100%;
+	}
+	.tex_lab_with{
+		width: 100%;
+	}
+	.textarea_box_with{
+		width: 100%;
+	}
+	.file_with {
+		width: 96%;
+		float: none;
+	}
+	.res_pad{
+		padding-left: 20px;
+	}
+	.res_siz{
+		width: 70%;
+		font-size: 14px;
+	}
+	/* .save_with{
+		width: 91%;
+        padding: 9px;
+		float: right;
+		padding-left: 25px;
+	} */
+	.save_with {
+		width: 100%;
+		text-align: center;
+		padding-top: 11px;
+	}
+	.modal_col{
+	    width: 100% !important;
+    }
+	.arr_with{
+		display:none;
+	}
+	.log_all_with{
+		padding-left: 0px;
+		width: 100%;
+		text-align: center;
+	}
+	.map_logo_with{
+		width: 100%;
+	}
+	.head_all_with{
+		width: 100%;
+	}
+	.form_sub_detail{
+		font-size: 13px !important;
+		padding-top: 0px;
+	}
+	.app_he_wid{
+		height: auto;
+	}
+	.dis_able {
+		width: 96%;
+	}
+	.modal_col2 {
+		width: 100%;
+	}
+	/* .save_des{
+	margin-left: 15px;
+} */
+	
+}
+/* Mobile End */
+/* Tablet Start */
+@media(min-width:768px){
+	.save_with {
+		width: 36%;
+	 }
+}
+/* Tablet End */

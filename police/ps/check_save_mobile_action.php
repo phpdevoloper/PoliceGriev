@@ -1,0 +1,124 @@
+<?php
+header('Content-type: application/xml; charset=UTF-8');
+error_reporting(0);
+ob_start();
+include('db.php');
+include("common_date_fun.php");
+//include('newSMS.php');
+include('sms_airtel_code.php');
+include_once 'common_lang.php';
+$mode =$_POST['mode'];
+if($mode=='chk_mobile') {
+        $date = new DateTime('now', new DateTimeZone('Asia/Kolkata'));
+        $today = $date->format('Y-m-d H:i:s');
+        $ip=$_SERVER['REMOTE_ADDR'];
+        $mobile_no=stripQuotes(killChars(trim($_POST['mobile_no'])));
+        $qua_sql = "SELECT user_mobile, otp  FROM usr_online where user_mobile='".$mobile_no."'";
+        $qua_rs=$db->query($qua_sql);
+        $num_rows=$qua_rs->rowCount();
+        $length = 6;
+        $chars = '1234567890';
+    $chars_length = (strlen($chars) - 1);
+    $string = $chars[rand(0, $chars_length)];
+    for ($i = 1; $i < $length; $i = strlen($string))
+    {
+        $r = $chars[rand(0, $chars_length)];
+        $string .=  $r;
+    }
+
+	if($_SESSION["lang"]=='E')
+	{
+			//$stringmsg = 'Your OTP to log in into Online GDP is '.$string.'';
+			$stringmsg = 'Your OTP to log in into Online GDP is '.$string.' - Tamil Nadu e-Governance Agency';
+			$ucode = '0';
+			$ct_id = '1007958712156882579';
+	}
+	else if($_SESSION["lang"]=='T')
+	{
+			//$stringmsg = 'இணையவழி மனுக்கள் மனுப் பரிசீலனை முகப்பு இல் உள்நுழைவு உங்கள் OTP எண் '.$string.'';
+			$stringmsg = 'இணையவழி மனுக்கள் மனுப் பரிசீலனை முகப்பு இல் உள்நுழைவு உங்கள் OTP எண் '.$string.' - தமிழ்நாடு மின்ஆளுமை முகமை.';
+			$ucode = '2';
+			$ct_id = '1007109542723505885';
+	}
+	else{
+			//$stringmsg = 'Your OTP to log in into Online GDP is '.$string.'';
+			$stringmsg = 'Your OTP to log in into Online GDP is '.$string.' - Tamil Nadu e-Governance Agency';
+			$ucode = '0';
+			$ct_id = '1007958712156882579';
+	}
+
+
+	if ($mobile_no != "") {
+			$status = SMS($mobile_no,$stringmsg,$ucode,$ct_id);
+	}
+
+	if ($num_rows == 0) {
+
+			$query = "INSERT INTO usr_online(user_mobile, otp,  enabling,entby, entdt, ent_ip_address) VALUES (?, ?,'true', ?, ?, ?)";
+			$result = $db->prepare($query);
+			$result->execute(array($mobile_no, $string, $mobile_no, $today, $ip));
+
+	} else {
+			$query = "UPDATE usr_online SET  otp=?, modby=?, moddt=?, mod_ip_address=? WHERE user_mobile=?";
+			$result = $db->prepare($query);
+			$result->execute(array($string,$mobile_no, $today, $ip,$mobile_no));
+	}
+
+	echo "<response>";
+			if ($status == 0) {
+					echo "<count>1</count>";
+					echo "<otp>".$string."</otp>";
+			} else {
+					echo "<count>0</count>";
+					echo "<otp>".$string."</otp>";
+			}
+	echo "</response>";
+
+} else if ($mode=='resend_otp') {
+        $mobile_no=stripQuotes(killChars(trim($_POST['mobile_no'])));
+        $string = stripQuotes(killChars(trim($_POST['otp'])));
+/*
+	$sql = "SELECT user_mobile, otp  FROM usr_online where user_mobile='".$mobile_no."'";
+	$rs=$db->query($sql);
+	$row=$rs->fetch(PDO::FETCH_BOTH);
+	$string=$row['otp'];
+*/
+
+		if($_SESSION["lang"]=='E')
+		{
+				//$stringmsg = 'Your OTP to log in into Online GDP is '.$string.'';
+				$stringmsg = 'Your OTP to log in into Online GDP is '.$string.' - Tamil Nadu e-Governance Agency';
+				$ucode = '0';
+				$ct_id = '1007958712156882579';
+		}
+		else if($_SESSION["lang"]=='T')
+		{
+				//$stringmsg = 'இணையவழி மனுக்கள் மனுப் பரிசீலனை முகப்பு இல் உள்நுழைவு உங்கள் OTP எண் '.$string.'';
+				$stringmsg = 'இணையவழி மனுக்கள் மனுப் பரிசீலனை முகப்பு இல் உள்நுழைவு உங்கள் OTP எண் '.$string.' - தமிழ்நாடு மின்ஆளுமை முகமை.';
+				$ucode = '2';
+				$ct_id = '1007109542723505885';
+		}
+		else{
+				//$stringmsg = 'Your OTP to log in into Online GDP is '.$string.'';
+				$stringmsg = 'Your OTP to log in into Online GDP is '.$string.' - Tamil Nadu e-Governance Agency';
+				$ucode = '0';
+				$ct_id = '1007958712156882579';
+		}
+
+
+        if ($mobile_no != "") {
+                $status = SMS($mobile_no,$stringmsg,$ucode,$ct_id);
+        }
+        echo "<response>";
+                if ($status == 0) {
+                        echo "<count>1</count>";
+                        echo "<otp>".$string."</otp>";
+                } else {
+                        echo "<count>0</count>";
+                        echo "<otp>".$string."</otp>";
+                }
+        echo "</response>";
+}
+?>
+
+

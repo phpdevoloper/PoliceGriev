@@ -1,0 +1,1295 @@
+/************************* Header *******************/
+
+body{
+	font-family: Times new Roman, verdana, Helvetica, sans-serif;
+    font-size: 84%;
+	min-width: 900px;
+	margin:0 auto;
+}
+/**********************TAB******************/
+ul.tabs 
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 29 px;
+	border-bottom: 0px solid #000000;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	width: 100%;
+	background:#EBD6D6;
+}
+ul.tabs li 
+{
+	float: left;
+	margin: 0;
+	cursor: pointer;
+	padding: 0px 21px ;
+	height: 28px;
+	line-height: 31px;
+	border: 1px solid #FFFFFF;
+	border-left: none;
+	font-weight: bold;
+	background: #B87070;
+	overflow: hidden;
+	position: relative;
+	font-family: inherit; 
+	font-size: inherit;
+	color:#FFFFFF ;
+	border-top-left-radius: 10px;
+}
+ul.tabs li:hover 
+{
+	background:#C58B8B;
+ 
+}	
+ul.tabs li.active
+{
+	background:#8D4747;
+	border-bottom: 1px solid #8D4747;
+}
+.tab_container 
+{
+	border: 1px solid /*#999999*/;
+	border-top: none;
+	clear: both;
+	float: left; 
+	width: 100%;
+	background: #FFFFFF;
+	border-bottom-style: hidden;
+}
+
+.tab_container_1 
+{
+	border: 1px solid /*#999999*/;
+	border-top: none;
+	clear: both;
+	float: left; 
+	width: 100%;
+	background: #BC7676;
+	border-bottom-style: hidden;
+}
+.tab_content 
+{
+	padding: 0px;
+	font-size: inherit;
+	display: none;
+}
+#container 
+{
+	width: 600px;
+	margin: 0 auto;	
+	width: 100%;
+	padding-top: 0px;
+}
+/********************** End of the TAB******************/
+
+/*table{
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+}*/
+.form_heading{
+	padding-top: 0px;
+}
+.form_heading .heading{
+	background-color: #bc6f6f;
+	text-align: center;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;	
+	height: 25px;
+	border: 1px solid #000000;
+	border-top-style: hidden;
+    border-top-width: thin;
+	border-bottom-style: hidden;
+    border-bottom-width: thin;
+	
+}
+.contentMainDiv .contentDiv{
+	width: 100%;
+	border: 1px solid #000000;
+	border-top-style: hidden;
+    border-top-width: thin;
+	border-bottom-style: hidden;
+    border-bottom-width: thin;
+	height: auto;
+}
+/*.contentMainDiv .contentDiv .form_heading{
+	background-color: #BC6F6F;
+	text-align: center;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;	
+	height: 25px;
+	border: 1px solid #000000;
+	border-top-style: hidden;
+    border-top-width: thin;
+	border-bottom-style: hidden;
+    border-bottom-width: thin;
+}*/
+select{
+	font-family: inherit;
+	font-size: inherit;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #969696;
+	height: 20px;
+	width: 275px;
+	background-color: #ffffff;
+}
+select:disabled{
+	background-color: #d3d3d3;
+}
+input[type="text"], input[type="password"]{
+	font-family: inherit;
+	font-size: inherit;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #969696;
+	height: 16px;
+	width: 180px;
+}
+
+.medium{
+	width: 65% !important;
+}
+
+.large{
+	width: 90% !important;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"]{
+	font-family: inherit;
+    font-size: inherit;
+	color: #FFFFFF;
+	background-color:#8D4747;
+	border: solid thin; 
+	text-align:center;
+	width: 80px;
+}
+input[type="button"]:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled{
+	font-family: inherit;
+    font-size: inherit;
+	color: #FFFFFF;
+	background-color:#C18585;
+	border: solid thin; 
+	text-align:center;
+	width: 80px;
+}
+textarea{
+	font-family: inherit; 
+	font-size: inherit;
+	width: 90%;
+	height: 75px;
+	border: 1px solid #999999;
+	padding: 2px;
+	resize: both;
+	min-width: 50px;
+	max-width: 1000px;
+	background-color: white;
+}
+textarea:disabled{
+	background-color: #E2E0E0;
+	resize: none;
+}
+.star{
+	color: #FF0000;
+	padding-left: 2px;
+}
+
+.bluestar{
+	color: #0000FF;
+	padding-left: 2px;
+}
+
+.footer
+{
+	font-family: inherit;
+	font-size: 13px;
+	font-weight: bold;
+	color:#FFFFFF;
+	background-color:#BC7676;
+	border-color:#000000;
+}
+	/* Date picker style start*/
+.embed + img {
+	position: relative; left: -20px; top: 3px; 
+}
+		/*month & year select box widht*/
+.datepick-month-year{
+	width: 80px;	
+}
+	/* Date picker style end*/
+
+.wrapword{
+	white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	white-space: pre-wrap;       /* css-3 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	word-break: break-all;
+	white-space: normal;
+}
+
+.search_flag_span{
+	height: 18px;
+	color: #FFFFFF;
+}
+.search_icon{
+	width:20px;
+	height:16px;
+	border: none;
+}
+/* End new common styles */ 
+
+/*-------- Table form class default 4 column type --------*/
+
+table.formTbl {
+	border-collapse:collapse;
+	border: 1px solid black;
+	width: 100%;
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+}
+table.formTbl td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.formTbl th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+
+.formTbl thead th{   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B5C3F6', endColorstr='#1D5492'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#B5C3F6), to(#1D5492)); /* for webkit browsers Chrome*/
+	background: -moz-linear-gradient(top,  #B5C3F6,  #1D5492); /* for firefox 3.6+ #003F7F*/
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 140%;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding : 4px;
+}
+.formTbl tbody tr{
+ 	background-color: #FCEFEF;
+}
+.formTbl tbody td:nth-child(odd){
+    width: 20%;
+	text-align: right;
+	min-width: 150px;
+	padding: 2px 6px;
+}
+.formTbl tbody td:nth-child(even){
+	width: 30%;
+	text-align: left;
+	padding: 2px 6px;
+}
+.formTbl tbody td:nth-child(n).btn{
+	text-align: center;
+	background-color: #BC7676;
+}
+.formTbl tbody tr:nth-child(n).lbl{
+	background-color: #E2BCBC;
+}
+.formTbl tbody td:nth-child(n).heading{
+	text-align: left;
+	background-color:#D7A2A2; 
+	color:#FFFFFF; 
+	font-size:16px; 
+	font-weight:bold;
+}
+.formTbl tbody td:nth-child(n) .comDiv{
+	background-color: #BC7676;
+}
+
+.formTbl tbody td:nth-child(n) .comDiv .btnDiv{
+   text-align: center;
+   width: 90%;
+   float: left;
+}
+.formTbl tbody td:nth-child(n) .comDiv .searchDiv{
+	text-align: right;
+	width: 10%;
+	float: right;
+	/*background-image:url(../images/search_div.png);*/
+}
+.f_size{
+	font-size: 130%;
+}
+/*---------------------------- End form table ------------------------*/
+
+/*---------------------------- Start search table ------------------------*/
+table.searchTbl {
+	border-collapse:collapse;
+	border: 1px solid black;
+	width: 100%;	
+	border-bottom-style: none;
+    border-bottom-width: medium;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-style: hidden;
+    border-top-width: thin;
+	font-family: inherit;
+	font-size: inherit;	 
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+}
+table.searchTbl td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.searchTbl th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+.searchTbl tbody{
+	/*color: #FFFFFF;*/
+	background-color: #E2BCBC/*#BC7676*/;
+	height: 25px;
+	font-size: inherit;
+	font-family: inherit;
+}
+.searchTbl tbody td:nth-child(even){
+	text-align: right;
+	padding-right: 5px;
+}
+.searchTbl tbody td:nth-child(odd){
+	text-align: left;
+	padding-left: 5px;
+}
+.searchTbl tbody td:nth-last-child(1){
+	text-align: center;
+	padding-left: 5px;
+}
+.searchTbl tbody td:nth-child(n).fld{
+	text-align: left;
+}
+.searchTbl tbody tr:nth-child(n).lbl{
+	text-align: right;
+}
+.searchTbl tbody td:nth-child(n).from_to_dt{
+	min-width: 285px;
+}
+/*---------------------------- End search table ------------------------*/
+
+/*---------------------------- Existing details Start ------------------------*/
+table.existRecTbl {
+	border-collapse:collapse;
+	border: 1px solid black;
+	width: 100%;	
+	border-bottom-style: none;
+    border-bottom-width: medium;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-style: hidden;
+    border-top-width: thin;
+	font-size: inherit;
+	font-family: inherit;
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+}
+table.existRecTbl td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.existRecTbl th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+.existRecTbl thead{
+	color: #FFFFFF;
+	background-color: #BC7676;
+}
+.existRecTbl thead th:nth-child(1){
+	width: 80%;
+	text-align: center;
+	padding: 1px 1px 1px 15px;
+}
+.existRecTbl thead th:nth-child(2){
+	width: 20%;
+	text-align: right;
+	padding: 1px 15px 1px 1px;
+}
+/*---------------------------- Existing details end ------------------------*/
+
+/*------------------------------- Grid Start -------------------------------*/
+table.gridTbl {
+	border-collapse:collapse;
+	border: 1px solid black;
+	width: 100%;
+	border-bottom-style: none;
+    border-bottom-width: medium;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-style: hidden;/*Top border is hide*/
+    border-top-width: thin;
+	font-size: inherit;
+	font-family: inherit;
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+}
+table.gridTbl td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.gridTbl th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+.gridTbl thead{
+	height: 25px;
+}
+
+/*grid class th with table header tag*/
+.gridTbl thead th{
+	text-align: center;
+	padding: 3px 5px;
+	/*text-transform: capitalize;	*/
+	background-color: #BC7676;
+    color: #FFFFFF;
+}
+.gridTbl thead th:nth-child(1).emptyTR{
+   	height: 20px;
+   	color: #FFFFFF;
+   	font-size: 14px;
+	background-color: #BC7676;
+}
+/*grid class th with table header tag. 
+		First child is select/Edit column*/
+.gridTbl tbody td:nth-child(1){
+	text-align: center;
+}
+/*grid class td with table body tag*/
+.gridTbl tbody td{
+	text-align: left;
+	padding: 2px 6px;
+}
+.gridTbl tbody tr:nth-child(even) {
+	background: #FFFFFF;
+}
+.gridTbl tbody tr:nth-child(odd) {
+	background: #FCEFEF;
+}
+.gridTbl td:nth-child(1).emptyTR{
+   	height: 20px;
+   	color: #FFFFFF;
+   	font-size: 14px;
+	background-color: #BC7676;
+}
+/*-------------------------------- Grid End --------------------------------*/
+
+/* Start pagination styles*/
+table.paginationTbl {
+	border-collapse:collapse;
+	border: 1px solid black;
+	
+	font-family: inherit;
+	font-size: inherit;
+	width: 100%;
+	border: 1px solid black;
+	border-bottom-style: none;
+    border-bottom-width: medium;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-style: hidden;/*Top border is hide*/
+    border-top-width: thin;
+	color:#FFFFFF;
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+}
+table.paginationTbl td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.paginationTbl th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+/*with table footer*/
+.paginationTbl tfoot td{
+	height: 20px;
+	background-color: #B5C3F6;
+	text-align: center;
+}
+.paginationTbl tfoot td:nth-child(1){
+	width: 20%;
+	text-align: center;
+	padding: 3px;
+}
+.paginationTbl tfoot td:nth-child(1) a{
+	color:#FFFFFF;
+}
+.paginationTbl tfoot td:nth-child(2){
+	width: 60%;
+	text-align: center;
+	padding: 3px;
+}
+.paginationTbl tfoot td:nth-child(3){
+	width: 20%;
+	text-align: center;
+	padding: 3px;
+}
+.paginationTbl tfoot td:nth-child(3) a{
+	color:#FFFFFF;
+}
+.paginationTbl tfoot td:nth-child(1).emptyTR{
+   height: 15px;
+}
+/*with out table footer*/
+.paginationTbl td{
+	height: 20px;
+	background-color: #B5C3F6;
+	text-align: center;
+}
+.paginationTbl td:nth-child(1){
+	width: 20%;
+	text-align: center;
+	background-color:#BC7676;
+}
+.paginationTbl td:nth-child(1) a{
+	color:#FFFFFF;
+}
+.paginationTbl td:nth-child(2){
+	width: 60%;
+	text-align: center;
+	background-color:#BC7676;
+}
+.paginationTbl td:nth-child(3){
+	width: 20%;
+	text-align: center;
+	background-color:#BC7676;
+}
+.paginationTbl td:nth-child(3) a{
+	color:#FFFFFF;
+}
+.paginationTbl td:nth-child(1).emptyTR{
+   height: 22px;
+}
+/*select box no. of records show in grid*/
+#pageSize{
+	min-width: 50px;
+	width: 50px;
+}
+.pageSize{
+	min-width: 50px;
+	width: 50px;
+}
+
+/*select box page no list */
+#pageNoList{
+	min-width: 50px;
+	width: 50px;
+}
+.pageNoList{
+	min-width: 50px;
+	width: 50px;
+}
+/* End pagination styles*/
+
+/*-------- start view table --------*/
+
+table.viewTbl {
+	border-collapse:collapse;
+	border: 1px solid black;
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+}
+table.viewTbl td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.viewTbl th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+.viewTbl tbody tr{
+ 	background-color: #FCEFEF;
+}
+.viewTbl tbody td:nth-child(odd){
+    width: 2%;
+	text-align: left;
+	min-width: 150px;
+	padding: 2px 6px;
+	background-color: #FEEDED;
+}
+.viewTbl tbody td:nth-child(even){
+	width: 20%;
+	text-align: left;
+	padding: 2px 6px;
+	white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	white-space: pre-wrap;       /* css-3 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	word-break: break-all;
+	white-space: normal;
+	max-width: 180px;
+	background-color: #FEF4F4;
+}
+.viewTbl tbody td:nth-child(n).btn{
+	text-align: center;
+}
+.viewTbl tbody td:nth-child(n).heading{
+	background-color: #DBA0A0; 
+    font-size:16px; 
+    font-weight:bold; 
+    text-align:center; 
+    color:#FFFFFF;
+}
+.viewTbl tbody td:nth-child(n).sub_heading{
+	background-color: #F2D5D5;
+    color: #000000;
+    font-size:14px; 
+    font-weight:bold; 
+    text-align: center;
+}
+.viewTbl tbody tr:nth-child(n).lbl{
+	background-color: #E2BCBC;
+}
+.viewTbl tbody td:nth-child(n).btn{
+	text-align: center;
+	background-color: #BC7676;
+}
+/*---------------------------- End view table ------------------------*/
+
+/*-------- start ackmnt view table  --------*/
+table.ack_viewTbl {
+	border-collapse:collapse;
+	border: 1px solid black;
+	
+	border-left: hidden; 
+    border-left-color: #E2BCBC;
+	/*border-right: hidden;*/
+    border-right-color: #E2BCBC;
+	font-size:16px;
+	/*margin-left:50px;
+	margin-right:50px;*/
+	
+}
+table.ack_viewTbl td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.ack_viewTbl th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+.ack_viewTbl tbody tr{
+ 	background-color: #FCEFEF;
+}
+.ack_viewTbl tbody td:nth-child(odd){
+    width: 2%;
+	text-align: left;
+	min-width: 140px;
+	padding: 2px 6px;
+	background-color: #FEEDED;
+}
+.ack_viewTbl tbody td:nth-child(even){
+	width: 20%;
+	text-align: left;
+	padding: 2px 6px;
+	white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	white-space: pre-wrap;       /* css-3 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	word-break: break-all;
+	white-space: normal;
+	max-width: 180px;
+	background-color: #FEF4F4;
+}
+.ack_viewTbl tbody td:nth-child(n).btn{
+	text-align: center;
+}
+.ack_viewTbl tbody td:nth-child(n).heading{
+	background-color: #DBA0A0; 
+    font-size:16px; 
+    font-weight:bold; 
+    text-align:center; 
+    color:#FFFFFF;
+}
+.ack_viewTbl tbody td:nth-child(n).sub_heading{
+	background-color: #F2D5D5;
+    color: #000000;
+    font-size:14px; 
+    font-weight:bold; 
+    text-align: center;
+}
+.ack_viewTbl tbody tr:nth-child(n).lbl{
+	background-color: #E2BCBC;
+}
+.ack_viewTbl tbody td:nth-child(n).btn{
+	text-align: center;
+	background-color: #BC7676;
+}
+/*---------------------------- End view table ------------------------*/
+
+
+
+
+
+
+/*------------------------------- Report Start -------------------------------*/
+table.rptTbl {
+	border-collapse:collapse;
+	border: 1px solid black;
+	width: 100%;
+	border-bottom-style: none;
+    border-bottom-width: medium;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-style: hidden;/*Top border is hide*/
+    border-top-width: thin;
+	font-size: inherit;
+	font-family: inherit;
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+}
+table.rptTbl td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.rptTbl th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+.rptTbl thead{
+	height: 25px;
+}
+
+/*grid class th with table header tag*/
+.rptTbl thead th{
+	text-align: center;
+	padding: 3px 5px;
+	/*text-transform: capitalize;	*/
+	background-color: #FFEFE8;
+    color: #000000;
+}
+.rptTbl thead img{
+	height:25px;
+	width:45px;
+} 
+.rptTbl thead th:nth-child(n).main_heading{
+	font-size: 18px;
+}
+.rptTbl thead th:nth-child(n).sub_heading{
+   
+}
+.rptTbl thead th:nth-child(n).search_desc{
+	
+}
+.rptTbl thead th:nth-child(n).emptyTR{
+   	height: 20px;
+   	color: #FFFFFF;
+   	font-size: 14px;
+	background-color: #BC7676;
+}
+/*grid class th with table header tag. 
+		First child is select/Edit column*/
+.rptTbl tbody td:nth-child(n){
+	text-align: right;
+	padding: 2px 6px;
+}
+.rptTbl td:nth-child(n).desc{
+	text-align: left;
+}
+.rptTbl td:nth-child(n).h1{
+	text-align: left;
+	font-size: 100%;
+	font-weight: bold;
+}
+.rptTbl td:nth-child(n).h2{
+	text-align: left;
+	padding-left: 30px;
+	font-weight: bold;
+}
+.rptTbl td:nth-child(n).h3{
+	text-align: left;
+	padding-left: 50px;
+	font-weight: bold;
+}
+.rptTbl td:nth-child(n).msgTD{
+	text-align: left;
+	padding-left: 50px;
+}
+.rptTbl tbody tr:nth-child(even) {
+	background: #FFFFFF;
+}
+.rptTbl tbody tr:nth-child(odd) {
+	background: #FCEFEF;
+}
+.rptTbl tr:nth-child(n).totalTR{
+   	height: 20px;
+   	color: #000000;
+   	background-color: #E1C8C8;
+	font-size: 14px;
+	font-weight: bold;
+}
+.rptTbl td:nth-child(n).buttonTD{
+	text-align: center;
+   	height: 20px;
+   	color: #FFFFFF;
+   	font-size: 14px;
+	background-color: #BC7676;
+}
+
+/*-------------------------------- Report End --------------------------------*/
+
+/*------------------------------- Pendency Page Begin -------------------------------*/
+table.pndTble {
+	border-collapse:collapse;
+	border: 1px solid black;
+	width: 100%;
+	border-bottom-style: none;
+    border-bottom-width: medium;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-style: hidden;/*Top border is hide*/
+    border-top-width: thin;
+	font-size: inherit;
+	font-family: inherit;
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+}
+table.pndTble td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.pndTble th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+.pndTble thead{
+	height: 25px;
+}
+
+/*grid class th with table header tag*/
+.pndTble thead th{
+	text-align: center;
+	padding: 3px 5px;
+	/*text-transform: capitalize;	*/
+	background-color: #4B4BD7;
+    color: #FFFFFF;
+	font-size: 16px;
+	border: 1px solid white;
+}
+.pndTble thead img{
+	height:25px;
+	width:45px;
+} 
+.pndTble thead th:nth-child(n).main_heading{
+	font-size: 18px;
+}
+.pndTble thead th:nth-child(n).sub_heading{
+   
+}
+.pndTble thead th:nth-child(n).search_desc{
+	
+}
+.pndTble thead th:nth-child(n).emptyTR{
+   	height: 20px;
+   	color: #FFFFFF;
+   	font-size: 14px;
+	background-color: #BC7676;
+}
+/*grid class th with table header tag. 
+		First child is select/Edit column*/
+.pndTble tbody td:nth-child(n){
+	text-align: right;
+	padding: 2px 6px;
+}
+.pndTble td:nth-child(n).desc{
+	text-align: left;
+}
+.pndTble td:nth-child(n).h1{
+	text-align: left;
+	font-size: 100%;
+	font-weight: bold;
+}
+.pndTble td:nth-child(n).h2{
+	text-align: left;
+	padding-left: 30px;
+	font-weight: bold;
+}
+.pndTble td:nth-child(n).h3{
+	text-align: left;
+	padding-left: 50px;
+	font-weight: bold;
+}
+.pndTble td:nth-child(n).msgTD{
+	text-align: left;
+	padding-left: 50px;
+}
+.pndTble tbody tr:nth-child(even) {
+	background: #FFFFFF;
+	font-size: 14px;
+}
+.pndTble tbody tr:nth-child(odd) {
+	background: #FCEFEF;
+	font-size: 14px;
+}
+.pndTble tr:nth-child(n).totalTR{
+   	height: 20px;
+   	color: #FFFFFF;
+   	background-color: #4B4BD7;
+	font-size: 16px;
+	font-weight: bold;
+	
+}
+.pndTble td:nth-child(n).buttonTD{
+	text-align: center;
+   	height: 20px;
+   	color: #FFFFFF;
+   	font-size: 14px;
+	background-color: #BC7676;
+}
+
+/*-------------------------------- Pendency Page End  --------------------------------*/
+
+
+/*------------------------------- Taluk Report Start -------------------------------*/
+table.t_rptTbl {
+	border-collapse:collapse;
+	border: 1px solid black;
+	width: 100%;
+	border-bottom-style: none;
+    border-bottom-width: medium;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-style: hidden;/*Top border is hide*/
+    border-top-width: thin;
+	font-size: inherit;
+	font-family: inherit;
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+}
+table.t_rptTbl td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.t_rptTbl th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+.t_rptTbl thead{
+	height: 25px;
+}
+
+/*grid class th with table header tag*/
+.t_rptTbl thead th{
+	text-align: center;
+	padding: 3px 5px;
+	/*text-transform: capitalize;	*/
+	background-color: #BC7676;
+    color: #FFFFFF;
+}
+.t_rptTbl thead img{
+	height:25px;
+	width:45px;
+} 
+.t_rptTbl thead th:nth-child(n).main_heading{
+	font-size: 18px;
+}
+.t_rptTbl thead th:nth-child(n).sub_heading{
+   
+}
+.t_rptTbl thead th:nth-child(n).search_desc{
+	
+}
+.t_rptTbl thead th:nth-child(n).emptyTR{
+   	height: 20px;
+   	color: #FFFFFF;
+   	font-size: 14px;
+	background-color: #BC7676;
+}
+/*grid class th with table header tag. 
+		First child is select/Edit column*/
+.t_rptTbl tbody td:nth-child(n){
+	text-align: right;
+	padding: 2px 6px;
+}
+.t_rptTbl td:nth-child(n).desc{
+	text-align: left;
+}
+.t_rptTbl td:nth-child(n).h1{
+	text-align: left;
+	font-size: 100%;
+	font-weight: bold;
+}
+.t_rptTbl td:nth-child(n).h2{
+	text-align: left;
+	padding-left: 30px;
+	font-weight: bold;
+}
+.t_rptTbl td:nth-child(n).h3{
+	text-align: left;
+	padding-left: 50px;
+	font-weight: bold;
+}
+.t_rptTbl td:nth-child(n).msgTD{
+	text-align: left;
+	padding-left: 50px;
+}
+.t_rptTbl tbody tr:nth-child(even) {
+	background: #FFFFFF;
+}
+.t_rptTbl tbody tr:nth-child(odd) {
+	background: #FFFFFF;
+}
+.t_rptTbl tr:nth-child(n).totalTR{
+   	height: 20px;
+   	color: #FFFFFF;
+   	background-color: #D69A9A;
+	font-size: 14px;
+	font-weight: bold;
+}
+.t_rptTbl td:nth-child(n).buttonTD{
+	text-align: center;
+   	height: 20px;
+   	color: #FFFFFF;
+   	font-size: 14px;
+	background-color: #BC7676;
+}
+
+/*-------------------------------- Taluk Report End --------------------------------*/
+
+#loginDiv{
+	border: 1px solid black;
+    border-top-style: hidden;/*Top border is hide*/
+    border-top-width: thin;
+    min-height: 350px;
+    padding-top: 150px;
+	background-color: #FCEDED;
+	border-left-style: hidden;
+	border-right-style: hidden;
+	height:375px;
+}
+
+/*Login page*/
+.loginTbl{
+	width: 400px;
+	font-family: inherit;
+	font-size: inherit;
+	margin: auto;
+}
+
+.loginTbl thead{
+	background-color: #BC7676/*#BC7676*/;
+	height: 35px;
+	font-size: 150%;
+	font-family: inherit;
+	color: #FFFFFF;
+}
+
+.loginTbl tbody{
+	background-color: #E2BCBC;
+	font-size: inherit;
+	font-family: inherit;
+}
+.loginTbl tbody td:nth-child(odd){
+	text-align: right;
+	padding: 5px;
+	width: 40%;	
+}
+.loginTbl tbody td:nth-child(even){
+	text-align: left;
+	padding: 5px;
+	width: 60%;
+}
+.loginTbl tbody td:nth-child(n).btn{
+	text-align: center;
+	background-color: #BC7676/*#BC7676*/;
+}
+
+/*Login page end*/
+
+/* login user details table */
+
+#usr_detail{
+	border-width: 0px; 
+	width: 100%; 
+	padding-top: 0px; 
+	display: inline-block; 
+	border: 1px solid black; 
+	border-top-style: hidden; 
+	background-color: #8D4747/*#BC6F6F*/; 
+	color:#FFFFFF;
+	height: 42px;
+}
+
+/* login user details table end */
+
+/*Page header design start */
+#header{ 
+	border:1px solid #000000; 
+	width:100%; 
+	height:89px; 
+	/*background-image:url(images/bg_3.png); */
+	background-color:#8D4747;
+	color: #FFFFFF;
+}
+.img{ 
+	padding: 2px;
+	float:left; 
+	width:10px; 
+	margin-top:1px; 
+	margin-left:1px; 
+	margin-bottom:1px;
+	//padding-left :10px;
+}
+.heading{
+	height:20px; 
+	font-size: 100%;
+	width : 95%;
+}
+.small_heading{
+	padding-bottom:5px; 
+	font-size: 90%;
+	width : 95%;
+}
+
+.flf {
+    display: inline-block;	
+ }
+.clink {   
+	color: #FFFFFF;	
+	font-size: 120%;	
+	float:right;
+	padding-right:100px;
+ }
+ .clink:hover {
+text-decoration: underline;
+color: #ff8000;
+
+}
+.plink {   
+	color: #FFFFFF;	
+	font-size: 120%;	
+ } 
+ 
+ .tplink {   
+	color: #FFFFFF;	
+	font-size: 100%;	
+ }
+ 
+  .plink:hover {   
+	text-decoration: underline;
+	color: #ff8000;
+ } 
+ 
+  .tplink:hover {   
+	text-decoration: underline;
+	color: #ff8000;
+ } 
+ 
+/*Page header design start */
+
+/* Page Footer design Start*/
+table.footTbl {
+	width: 100%;
+	border-collapse:collapse;
+	border: 1px solid black;
+	border-top-style: hidden;
+    border-top-width: thin;
+	border-bottom-style: hidden;
+    border-bottom-width: thin;
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+	//padding-top:0px;
+}
+table.footTbl td  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+table.footTbl th  {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+.footTbl tbody tr{
+ 	background-color: #FCEFEF;
+	color: #333;
+}
+.footBottom{
+	background-color: #BC7676; 
+	height: 5px; 
+	border: 1px solid black;
+	border-top-style: hidden; 
+	border-top-width: thin;
+	
+	border-left: hidden;
+    border-left-color: #E2BCBC;
+	border-right: hidden;
+    border-right-color: #E2BCBC;
+}
+/* Page footer design end*/
+
+/*unauthorized access start*/
+.unauth_top{
+	padding-top: 150px;
+}
+
+.unauth_mid_1{
+	border-bottom: 1px groove;
+	height: 1px; 
+	width: 70%; 
+	border-width: 3px; 
+	margin: auto;
+}
+
+.unauth_mid_2{
+	color: #F00;
+	text-align: center; 
+	font-weight:bold; 
+	font-size: 180%; 
+	padding-top: 10px;
+}
+
+.unauth_bottom{
+	border-bottom: 1px groove; 
+	height: 1px; width: 100%; 
+	margin-top: 10px; 
+	border-width: 3px;
+}
+a
+{
+	color:#1C1CFF;
+}
+/*unauthorized access end*/

@@ -1,0 +1,438 @@
+body {
+    //background: #D3D3D3 !important;
+	background-image:linear-gradient(150deg, #c3b091 0%, #ffffff 100%) !important;
+    color: #535353;
+    //font-family: Times New Roman !important;
+}
+/* Template Header css Start */
+.call_now {
+    font-size: 18px !important;
+	letter-spacing: 2px;
+	position: relative;
+	//font-family: times new roman;
+	font-weight: bold;
+}
+
+.call_now2 {
+    font-size: 25px;
+	letter-spacing: 2px;
+	position: relative;
+	//font-family: times new roman;
+	font-weight: bold;
+	top: 8px;
+}
+.call_now3 {
+    font-size: 11px;
+	letter-spacing: 2px;
+	position: relative;
+	font-family: times new roman;
+	font-weight: bold;
+	top: 8px;
+}
+.call_now::before {
+    content: none;
+    position: absolute;
+    top: -50px;
+    left: -12px;
+}
+.fo_si {
+ font-size: 19px;
+}
+/* Template Header css End */
+/* form logout div Start */
+.form_logout_wid{
+	width: 100%;
+	height: 39px;
+	background-color: #F3EEE7;
+	border-bottom: 1px solid #FFFFFF;
+}
+.form_logout_wid_manda{
+	width: 100%;
+	height: 39px;
+	//background-color: #D3D3D3;
+}
+.form_user{
+	width: 50%;
+    float: left;
+	line-height: 27px;
+}
+.form_logout{
+	width: 50%;
+    float: left;
+}
+.form_logout_pad{
+	padding-top: 4px;
+}
+.lab_user_lef{
+	margin-left: 20px;
+	font-size: 13px;
+}
+.bt_logout_rig{
+	float: right;
+	margin-right: 26px;
+	font-weight: 700;
+}
+/* .ho_bt:hover{
+	color: #FFF;
+    background-color: #1e425d;
+    border-color: #152f42;
+	font-size: 12px;
+} */
+/* form logout css End */
+
+/* form header css Start */
+.form_he_wid{
+	width: 100%;
+    border: 1px solid #FFFFFF;
+	height: 39px;
+	background-color:#716F6F;
+}
+.form_he{
+	padding-top: 4px;
+	text-align: center;
+	color:#FFFFFF;
+	font-size: 20px;
+}
+
+/* form header css End */
+
+/* Mandatory css Start */
+.form_mandatory_left{
+	width: 50%;
+    float: left;
+	line-height: 27px;
+}
+.form_mandatory_right{
+	width: 50%;
+    float: left;
+	line-height: 30px;
+}
+.mandatory_rig{
+	float: right;
+	margin-right: 26px;
+}
+.star{
+	color:#E74C3C;
+}
+/* Mandatory css End */
+
+/* Petition Related Details css Start */
+.pe_re_de_with{
+	width: 100%;
+	border: 1px solid #FFFFFF;
+	float: left;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #FFFFFF;
+}
+.pe_he_wid{
+	width: 100%;
+    border: 1px solid #FFFFFF;
+	height: 39px;
+	background-color:#716F6F;
+	cursor:pointer;
+}
+.pe_he_wid1{
+	width: 100%;
+	border: 1px solid #716f6f;
+	height: auto;
+	background-color: #f3eee7;
+	cursor: pointer;
+}
+.form_he_rig{
+	padding-top: 4px;
+	color: #FFFFFF;
+	font-size: 20px;
+	margin-left: 20px;
+	width: 50%;
+	float: left;
+}
+.form_sub_detail{
+	color: #FFFFFF;
+	font-size: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+.pet_all_with{
+	width: 100%;
+	float: left;
+}
+.pe_re_pad{
+	padding-top: 2px;
+	margin-left: 20px;
+}
+.with_se{
+	width: 33%;
+    float: left;
+}
+.lab_with{
+	width: 38%;
+    float: left;
+    font-size: 13px;
+    text-align: right;
+    padding-right: 5px;
+}
+.se_box_with{
+	//display: block;
+	width: 62%;
+	height: 34px;
+	 padding: 6px 12px;
+	font-size: 12px;
+	line-height: 1.428571429;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #716F6F;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+}
+.se_box_with1{
+	//display: block;
+	width: 10%;
+	height: 34px;
+	 padding: 6px 12px;
+	font-size: 12px;
+	line-height: 1.428571429;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #716F6F;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+}
+.se_box_with2{
+	//display: block;
+	width: 50%;
+	height: 34px;
+	 padding: 6px 12px;
+	font-size: 12px;
+	line-height: 1.428571429;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #716F6F;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+}
+.dis_able{
+	width: 62%;
+	height: 34px;
+	 padding: 6px 12px;
+	font-size: 12px;
+	line-height: 1.428571429;
+	color: #555555;
+    vertical-align: middle;
+	background-image: none;
+	border: 1px solid #716F6F;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+}
+.textarea_box_with{
+	width: 81%;
+    float: left;
+}
+.with_textarea{
+	width: 66%;
+    float: left;
+}
+.tex_lab_with{
+	width: 19%;
+    float: left;
+	font-size: 13px;
+	text-align: right;
+    padding-right: 5px;
+}
+.textarea_des{
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 15px;
+	line-height: 1.428571429;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #716F6F;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+}
+.file_with{
+	width: 56%;
+    float: right;
+}
+.form_down{
+	width: 46%;
+	float: left;
+	margin-left: 5px;
+}
+.down_arrow{
+	font-size: 35px !important;
+	color: #FFFFFF;
+	float: right;
+}
+/* Petition Related Details css End */
+
+/* Applicant Details & Communication Addresss css Start */
+.app_he_wid {
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    height: 39px;
+    background-color: #716F6F;
+	float: left;
+	cursor: pointer;
+}
+
+/* Applicant Details & Communication Addresss css End */
+/* Model  Arrow css Start */
+.arr_with{
+	float: right;
+	width: 38%;
+}
+.arr_img_with{
+	width: 24%;
+}
+.mo_le{
+	float:left;
+}
+.note_col {
+    color: #FFFFFF;
+}
+.note_col1 {
+    color: #000000e6;
+}
+
+.modal_width {
+    margin-bottom: 0px;
+}
+.modal_col{
+	background-color: #16A085;
+	width: 47%;
+    margin: 0 auto;
+	
+}
+.modal_mr_top{
+	margin-top: 199px;
+}
+
+.modal_col2{
+	width: 47%;
+    margin: 0 auto;
+}
+.int_close:hover{
+	color: #FD0113;
+}
+.int_close{
+	color: #FFFFFF;
+}
+.close_bott{
+	color: #FFFFFF;
+	background-color: #DA8C10;
+	border-color: #DA8C10;
+}
+.close_bott:hover{
+	color: #FFFFFF;
+	background-color: #8E44AD;
+	border-color: #8E44AD;
+}
+.mod_size{
+	font-size:17px !important; 
+}
+.modal_col1{
+	background-color: #16A085;
+}
+.modal_col2{
+	background-color: #16A085;
+	width: 119%;
+}
+.modal_col3{
+	background-color: #16A085;
+	width: 137%;
+}
+/* Model Arrow css End */
+
+/* Save button css Start */
+.bt_pad{
+	width: 94%;
+}
+.save_with{
+	width: 26%;
+	padding: 4px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding-left: 87px;
+}
+.save_des{
+	width: 30%;
+	float: left;
+}
+.clear_des{
+	width: 30%;
+	float: left;
+}
+.logout_des{
+	width: 30%;
+	float:left;
+	
+}
+/* Save button css End */
+
+/* Header css Start */
+.top_header_all_with{
+	width: 100%;
+    background: #006fff;
+	float: left;
+}
+.log_all_with{
+	width: 33%;
+	float: left;
+	padding-left: 100px;
+}
+.head_all_with{
+	width: 33%;
+    float: left;
+}
+.map_logo_with{
+	width: 33%;
+	float: left;
+	padding-right: 100px;
+}
+.gov_log_img{
+	width: 28%;
+}
+.gov_map_img{
+	float: right;
+}
+.clear_both{
+	clear:both;
+}
+.head_all_with h1 {
+    font-weight: bold;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+	line-height: 31px;
+}
+.head_all_with h2 {
+    font-weight: bold;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+	line-height: 37px;
+}
+.head_all_with h3 {
+    font-weight: bold;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+}
+/* Header css End */
+/* Validation css Start */
+
+/* Validation css End */

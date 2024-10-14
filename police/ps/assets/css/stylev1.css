@@ -1,0 +1,152 @@
+.co-left {
+	color: #fff;
+    line-height: 22px;
+	cursor: pointer;
+}
+.call_now {
+    font-size: 20px;
+	letter-spacing: 2px;
+	position: relative;
+	font-family: times new roman;
+	font-weight: bold;
+}
+.call_now1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    font-family: Tahoma;
+}
+.call_now2 {
+    font-size: 25px;
+	letter-spacing: 2px;
+	position: relative;
+	font-family: times new roman;
+	font-weight: bold;
+	top: 8px;
+}
+.call_now3 {
+    font-size: 11px;
+	letter-spacing: 2px;
+	position: relative;
+	font-family: times new roman;
+	font-weight: bold;
+	top: 8px;
+}
+.call_now::before {
+    content: none;
+    position: absolute;
+    top: -50px;
+    left: -12px;
+}
+.log_wid {
+	width: 59%;
+	float: left;
+}
+.bt_se {
+	margin-top: -61px;
+    margin-left: 117px;
+}
+.common-left ul li.ministry a:hover {
+    color: #CA0C5C !important;
+}
+.fo_si {
+     font-size: 19px;
+}
+
+.relo {
+	width: 97%;
+	cursor: pointer;
+}
+.catc {
+	width: 100%;
+    margin-left: 52px;
+}
+.cec {
+width: 89%;
+}
+.re_img {
+	margin-left: -64px;
+    margin-top: -4px;
+}
+@media(min-width:1440px) and (max-width:2254px)
+{
+	.flex-control-nav {
+    left: 190px;
+    right: auto;
+    }
+   .banner-wrapper .flex-pauseplay 
+   {
+    left: 854px;
+    right: auto;
+}
+   .logo
+   {
+    margin-left: -13px;
+}
+	
+}
+@media (min-width: 1200px)
+{
+  .flex-control-nav {
+    left: 202px; 
+    right: auto;
+}
+   .banner-wrapper .flex-pauseplay {
+    left: 870px; 
+    right: auto;
+}
+}
+input:focus {
+	color:red;
+}
+#submit_otp:hover {
+    background-color: #F37A0B;
+}
+tr {
+	font-size: 14px;
+}
+td {
+	padding: 0px;
+	font-size: 14px;
+	color: #000000;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	font-weight: bold;
+}
+th {
+	font-size: 16px;
+	line-height: 8px;
+}
+.viewTbl{
+	margin-bottom: 10px;
+}
+th {
+	background: #DDDDDD;
+	color: #000000;
+}
+table, th, td {
+    border: 2px solid #ccc;
+}
+.emptyTRV
+{
+	 width:100%;
+	 text-align: right;
+	 line-height: 9px;
+}
+body {
+     background: #D3D3D3;
+    font-family: Verdana, Geneva, sans-serif !important;
+}
+@page {
+size:auto;margin:0mm;
+}
+.pad_t {
+	padding: 9px;
+}
+@media(max-width:767px)
+{
+	.taple_scroll {
+		overflow-x: scroll;
+	}
+	
+}
